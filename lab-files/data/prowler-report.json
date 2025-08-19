@@ -1,1 +1,313 @@
-
+[{
+    "SchemaVersion": "2018-10-08",
+    "Id": "prowler-ec2_securitygroup_from_launch_wizard-239285816251-us-east-1-d08e81657",
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
+    "RecordState": "ACTIVE",
+    "ProductFields": {
+        "ProviderName": "Prowler",
+        "ProviderVersion": "5.11.0",
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8"
+    },
+    "GeneratorId": "prowler-ec2_securitygroup_from_launch_wizard",
+    "AwsAccountId": "239285816251",
+    "Types": [
+        "Infrastructure Security"
+    ],
+    "FirstObservedAt": "2025-08-18T02:31:39Z",
+    "UpdatedAt": "2025-08-18T02:31:39Z",
+    "CreatedAt": "2025-08-18T02:31:39Z",
+    "Severity": {
+        "Label": "MEDIUM"
+    },
+    "Title": "Security Groups created by EC2 Launch Wizard.",
+    "Description": "Security group default (sg-01e6d271181853df8) was not created using the EC2 Launch Wizard.",
+    "Resources": [
+        {
+            "Type": "AwsEc2SecurityGroup",
+            "Id": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8",
+            "Partition": "aws",
+            "Region": "us-east-1"
+        }
+    ],
+    "Compliance": {
+        "Status": "PASSED",
+        "RelatedRequirements": [
+            "AWS-Well-Architected-Framework-Security-Pillar SEC05-BP03",
+            "ENS-RD2022 mp.com.1.aws.sg.1",
+            "ISO27001-2022 A.8.20 A.8.21 A.8.22",
+            "KISA-ISMS-P-2023 2.10.2",
+            "KISA-ISMS-P-2023-korean 2.10.2"
+        ],
+        "AssociatedStandards": [
+            {
+                "StandardsId": "AWS-Well-Architected-Framework-Security-Pillar"
+            },
+            {
+                "StandardsId": "ENS-RD2022"
+            },
+            {
+                "StandardsId": "ISO27001-2022"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023-korean"
+            }
+        ]
+    },
+    "Remediation": {
+        "Recommendation": {
+            "Text": "Apply Zero Trust approach. Implement a process to scan and remediate security groups created by the EC2 Wizard. Recommended best practices is to use an authorized security group.",
+            "Url": "https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html"
+        }
+    }
+},{
+    "SchemaVersion": "2018-10-08",
+    "Id": "prowler-ec2_securitygroup_with_many_ingress_egress_rules-239285816251-us-east-1-d08e81657",
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
+    "RecordState": "ACTIVE",
+    "ProductFields": {
+        "ProviderName": "Prowler",
+        "ProviderVersion": "5.11.0",
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8"
+    },
+    "GeneratorId": "prowler-ec2_securitygroup_with_many_ingress_egress_rules",
+    "AwsAccountId": "239285816251",
+    "Types": [
+        "Infrastructure Security"
+    ],
+    "FirstObservedAt": "2025-08-18T02:31:39Z",
+    "UpdatedAt": "2025-08-18T02:31:39Z",
+    "CreatedAt": "2025-08-18T02:31:39Z",
+    "Severity": {
+        "Label": "HIGH"
+    },
+    "Title": "Find security groups with more than 50 ingress or egress rules.",
+    "Description": "Security group default (sg-01e6d271181853df8) has 1 inbound rules and 1 outbound rules.",
+    "Resources": [
+        {
+            "Type": "AwsEc2SecurityGroup",
+            "Id": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8",
+            "Partition": "aws",
+            "Region": "us-east-1"
+        }
+    ],
+    "Compliance": {
+        "Status": "PASSED",
+        "RelatedRequirements": [
+            "AWS-Foundational-Technical-Review NETSEC-001",
+            "AWS-Well-Architected-Framework-Security-Pillar SEC05-BP03",
+            "ISO27001-2022 A.8.20 A.8.21 A.8.22",
+            "KISA-ISMS-P-2023 2.10.2",
+            "KISA-ISMS-P-2023-korean 2.10.2"
+        ],
+        "AssociatedStandards": [
+            {
+                "StandardsId": "AWS-Foundational-Technical-Review"
+            },
+            {
+                "StandardsId": "AWS-Well-Architected-Framework-Security-Pillar"
+            },
+            {
+                "StandardsId": "ISO27001-2022"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023-korean"
+            }
+        ]
+    },
+    "Remediation": {
+        "Recommendation": {
+            "Text": "Use a Zero Trust approach. Narrow ingress traffic as much as possible. Consider north-south as well as east-west traffic.",
+            "Url": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html"
+        }
+    }
+},{
+    "SchemaVersion": "2018-10-08",
+    "Id": "prowler-fms_policy_compliant-239285816251-us-east-1-ef373bfca",
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
+    "RecordState": "ACTIVE",
+    "ProductFields": {
+        "ProviderName": "Prowler",
+        "ProviderVersion": "5.11.0",
+        "ProwlerResourceName": "arn:aws:fms:us-east-1:239285816251:policy"
+    },
+    "GeneratorId": "prowler-fms_policy_compliant",
+    "AwsAccountId": "239285816251",
+    "Types": [
+        "Software and Configuration Checks"
+    ],
+    "FirstObservedAt": "2025-08-18T02:31:39Z",
+    "UpdatedAt": "2025-08-18T02:31:39Z",
+    "CreatedAt": "2025-08-18T02:31:39Z",
+    "Severity": {
+        "Label": "MEDIUM"
+    },
+    "Title": "Ensure that all FMS policies inside an admin account are compliant",
+    "Description": "FMS without any compliant policy for account 239285816251.",
+    "Resources": [
+        {
+            "Type": "Other",
+            "Id": "arn:aws:fms:us-east-1:239285816251:policy",
+            "Partition": "aws",
+            "Region": "us-east-1"
+        }
+    ],
+    "Compliance": {
+        "Status": "FAILED",
+        "RelatedRequirements": [
+            "ENS-RD2022 mp.com.1.aws.nfw.2",
+            "KISA-ISMS-P-2023 2.10.1 2.10.2",
+            "KISA-ISMS-P-2023-korean 2.10.1 2.10.2"
+        ],
+        "AssociatedStandards": [
+            {
+                "StandardsId": "ENS-RD2022"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023-korean"
+            }
+        ]
+    },
+    "Remediation": {
+        "Recommendation": {
+            "Text": "Ensure FMS is enabled and all the policies are compliant across your AWS accounts",
+            "Url": "https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms-intro.html"
+        }
+    }
+},{
+    "SchemaVersion": "2018-10-08",
+    "Id": "prowler-vpc_different_regions-239285816251-us-east-1-44cecf287",
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
+    "RecordState": "ACTIVE",
+    "ProductFields": {
+        "ProviderName": "Prowler",
+        "ProviderVersion": "5.11.0",
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:vpc"
+    },
+    "GeneratorId": "prowler-vpc_different_regions",
+    "AwsAccountId": "239285816251",
+    "Types": [
+        "Infrastructure Security"
+    ],
+    "FirstObservedAt": "2025-08-18T02:31:39Z",
+    "UpdatedAt": "2025-08-18T02:31:39Z",
+    "CreatedAt": "2025-08-18T02:31:39Z",
+    "Severity": {
+        "Label": "MEDIUM"
+    },
+    "Title": "Ensure there are VPCs in more than one region",
+    "Description": "VPCs found only in one region.",
+    "Resources": [
+        {
+            "Type": "AwsEc2Vpc",
+            "Id": "arn:aws:ec2:us-east-1:239285816251:vpc",
+            "Partition": "aws",
+            "Region": "us-east-1"
+        }
+    ],
+    "Compliance": {
+        "Status": "FAILED",
+        "RelatedRequirements": [
+            "ENS-RD2022 mp.com.4.r1.aws.vpc.1 mp.com.4.r3.aws.vpc.1",
+            "ISO27001-2022 A.8.20 A.8.21 A.8.22",
+            "KISA-ISMS-P-2023 2.9.2",
+            "KISA-ISMS-P-2023-korean 2.9.2"
+        ],
+        "AssociatedStandards": [
+            {
+                "StandardsId": "ENS-RD2022"
+            },
+            {
+                "StandardsId": "ISO27001-2022"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023-korean"
+            }
+        ]
+    },
+    "Remediation": {
+        "Recommendation": {
+            "Text": "Ensure there are VPCs in more than one region",
+            "Url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html"
+        }
+    }
+},{
+    "SchemaVersion": "2018-10-08",
+    "Id": "prowler-vpc_endpoint_services_allowed_principals_trust_boundaries-239285816251-us-east-1-560f32bf0",
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
+    "RecordState": "ACTIVE",
+    "ProductFields": {
+        "ProviderName": "Prowler",
+        "ProviderVersion": "5.11.0",
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:vpc-endpoint-service/vpce-svc-02e288a4c6043110f"
+    },
+    "GeneratorId": "prowler-vpc_endpoint_services_allowed_principals_trust_boundaries",
+    "AwsAccountId": "239285816251",
+    "Types": [
+        "Infrastructure Security"
+    ],
+    "FirstObservedAt": "2025-08-18T02:31:39Z",
+    "UpdatedAt": "2025-08-18T02:31:39Z",
+    "CreatedAt": "2025-08-18T02:31:39Z",
+    "Severity": {
+        "Label": "MEDIUM"
+    },
+    "Title": "Find trust boundaries in VPC endpoint services allowlisted principles.",
+    "Description": "VPC Endpoint Service vpce-svc-02e288a4c6043110f has no allowed principals.",
+    "Resources": [
+        {
+            "Type": "AwsEc2VpcEndpointService",
+            "Id": "arn:aws:ec2:us-east-1:239285816251:vpc-endpoint-service/vpce-svc-02e288a4c6043110f",
+            "Partition": "aws",
+            "Region": "us-east-1"
+        }
+    ],
+    "Compliance": {
+        "Status": "PASSED",
+        "RelatedRequirements": [
+            "AWS-Foundational-Technical-Review NETSEC-002",
+            "AWS-Well-Architected-Framework-Security-Pillar SEC05-BP01",
+            "ISO27001-2022 A.8.20 A.8.21 A.8.22",
+            "KISA-ISMS-P-2023 2.5.6 2.10.2",
+            "KISA-ISMS-P-2023-korean 2.5.6 2.10.2",
+            "NIS2 6.8.2.a"
+        ],
+        "AssociatedStandards": [
+            {
+                "StandardsId": "AWS-Foundational-Technical-Review"
+            },
+            {
+                "StandardsId": "AWS-Well-Architected-Framework-Security-Pillar"
+            },
+            {
+                "StandardsId": "ISO27001-2022"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023"
+            },
+            {
+                "StandardsId": "KISA-ISMS-P-2023-korean"
+            },
+            {
+                "StandardsId": "NIS2"
+            }
+        ]
+    },
+    "Remediation": {
+        "Recommendation": {
+            "Text": "In multi Account environments identify untrusted links. Check trust chaining and dependencies between accounts.",
+            "Url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html"
+        }
+    }
+}]
