@@ -1,0 +1,11 @@
+#!/bin/bash
+# run-prowler.sh - Script to run Prowler scan on AWS
+
+# Navigate to Prowler directory
+cd ~/prowler
+
+# Run scan with JSON-ASFF output
+./prowler-cli.py aws -M json-asff -o /home/ec2-user/prowler-output/prowler-report.json --region us-east-1
+
+# Verify output
+ls -l /home/ec2-user/prowler-output/

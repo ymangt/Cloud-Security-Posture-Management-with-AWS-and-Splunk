@@ -1,0 +1,16 @@
+#!/bin/bash
+# ec2-setup.sh - Script to configure EC2 instance for CSPM lab
+
+# Install required tools
+sudo dnf install -y curl jq
+
+# Fetch IMDSv2 token and attach IAM role (manual step in AWS Console)
+# Note: IAM role attachment must be done via AWS Console (e.g., ProwlerRole with AmazonEC2ReadOnlyAccess)
+
+# Export credentials (example, adjust with actual curl output)
+TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+ROLE=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+eval $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/$ROLE | jq -r '. | tostring')
+
+# Verify setup
+aws ec2 describe-instances --region us-east-1
