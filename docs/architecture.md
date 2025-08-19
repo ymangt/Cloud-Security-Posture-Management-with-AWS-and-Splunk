@@ -27,16 +27,18 @@ This document outlines the architecture of the Cloud Security Posture Management
   - **Dashboard**: "Cloud Security Posture Dashboard" with Compliance Status and Misconfigurations panels.
 
 ## Architecture Diagram
+```mermaid
 graph TD
-    A[Internet] --> B[AWS Cloud (us-east-2)]
-    B --> C[EC2 Instance: Cloud-Security-VM (18.222.60.52)]
-    C --> D[Prowler 5.11.0]
-    D --> E[Scans EC2 and AWS account]
-    D --> F[Generates prowler-report.json]
-    C --> G[SIEM-Lab-VM (192.168.71.133)]
-    G --> H[Splunk]
-    H --> I[Ingests prowler-report.json]
-    H --> J[Displays Cloud Security Posture Dashboard]
+    A["Internet"] --> B["AWS Cloud (us-east-2)"]
+    B --> C["EC2 Instance - Cloud-Security-VM 18.222.60.52"]
+    C --> D["Prowler 5.11.0"]
+    D --> E["Scans EC2 and AWS account"]
+    D --> F["Generates prowler-report.json"]
+    C --> G["SIEM-Lab-VM 192.168.71.133"]
+    G --> H["Splunk"]
+    H --> I["Ingests prowler-report.json"]
+    H --> J["Displays Cloud Security Posture Dashboard"]
+```
 
 
 ## Data Flow
