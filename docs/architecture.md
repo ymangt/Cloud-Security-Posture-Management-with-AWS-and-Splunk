@@ -11,7 +11,7 @@ This document outlines the architecture of the Cloud Security Posture Management
   - **Private IP**: `<private-ip>`
   - **AMI**: `ami-06d53ad9c5c4da96d` (Amazon Linux 2023)
   - **Instance Type**: `t3.micro`
-  - **Key Pair**: `cloud-security-key`
+  - **Key Pair**: `<key-pair-name>`
   - **IAM Role**: `ProwlerRole` with `AmazonEC2ReadOnlyAccess` policy
   - **Security Group**: `launch-wizard-2` (ports 22 and 80 inbound, all outbound)
   - **Purpose**: Hosts the Prowler security scanning tool and serves as the target for compliance assessment.
