@@ -34,7 +34,7 @@ The lab successfully identified security compliance and misconfigurations, visua
 ## Files
 - `lab-files/screenshots/cloud-dashboard.png`: Visual proof of the "Cloud Security Posture Dashboard" with Compliance Status and Misconfigurations panels.
 - `lab-files/reports/cloud-report.pdf`: Formal PDF export of the dashboard for detailed review.
-- `lab-files/data/prowler-report.json` (optional): Sanitized raw Prowler scan results for transparency.
+- `lab-files/data/prowler-report.json`: Sanitized raw Prowler scan results for transparency.
 - `terraform/main.tf`: Terraform configuration for the EC2 instance, IAM role, and security group setup.
 - `docs/architecture.md`: High-level architecture overview with a Mermaid diagram of the lab.
 - `docs/setup-guide.md`: Step-by-step instructions to replicate the lab setup.
