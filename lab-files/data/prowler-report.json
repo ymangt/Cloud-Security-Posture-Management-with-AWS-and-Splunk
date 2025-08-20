@@ -1,15 +1,15 @@
 [{
     "SchemaVersion": "2018-10-08",
-    "Id": "prowler-ec2_securitygroup_from_launch_wizard-239285816251-us-east-1-d08e81657",
+    "Id": "prowler-ec2_securitygroup_from_launch_wizard-123456789012-us-east-1-d08e81657",
     "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
     "RecordState": "ACTIVE",
     "ProductFields": {
         "ProviderName": "Prowler",
         "ProviderVersion": "5.11.0",
-        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8"
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-01e6d271181853df8"
     },
     "GeneratorId": "prowler-ec2_securitygroup_from_launch_wizard",
-    "AwsAccountId": "239285816251",
+    "AwsAccountId": "123456789012",
     "Types": [
         "Infrastructure Security"
     ],
@@ -24,7 +24,7 @@
     "Resources": [
         {
             "Type": "AwsEc2SecurityGroup",
-            "Id": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8",
+            "Id": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-01e6d271181853df8",
             "Partition": "aws",
             "Region": "us-east-1"
         }
@@ -64,16 +64,16 @@
     }
 },{
     "SchemaVersion": "2018-10-08",
-    "Id": "prowler-ec2_securitygroup_with_many_ingress_egress_rules-239285816251-us-east-1-d08e81657",
+    "Id": "prowler-ec2_securitygroup_with_many_ingress_egress_rules-123456789012-us-east-1-d08e81657",
     "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
     "RecordState": "ACTIVE",
     "ProductFields": {
         "ProviderName": "Prowler",
         "ProviderVersion": "5.11.0",
-        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8"
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-01e6d271181853df8"
     },
     "GeneratorId": "prowler-ec2_securitygroup_with_many_ingress_egress_rules",
-    "AwsAccountId": "239285816251",
+    "AwsAccountId": "123456789012",
     "Types": [
         "Infrastructure Security"
     ],
@@ -88,7 +88,7 @@
     "Resources": [
         {
             "Type": "AwsEc2SecurityGroup",
-            "Id": "arn:aws:ec2:us-east-1:239285816251:security-group/sg-01e6d271181853df8",
+            "Id": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-01e6d271181853df8",
             "Partition": "aws",
             "Region": "us-east-1"
         }
@@ -128,16 +128,16 @@
     }
 },{
     "SchemaVersion": "2018-10-08",
-    "Id": "prowler-fms_policy_compliant-239285816251-us-east-1-ef373bfca",
+    "Id": "prowler-fms_policy_compliant-123456789012-us-east-1-ef373bfca",
     "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
     "RecordState": "ACTIVE",
     "ProductFields": {
         "ProviderName": "Prowler",
         "ProviderVersion": "5.11.0",
-        "ProwlerResourceName": "arn:aws:fms:us-east-1:239285816251:policy"
+        "ProwlerResourceName": "arn:aws:fms:us-east-1:123456789012:policy"
     },
     "GeneratorId": "prowler-fms_policy_compliant",
-    "AwsAccountId": "239285816251",
+    "AwsAccountId": "123456789012",
     "Types": [
         "Software and Configuration Checks"
     ],
@@ -148,11 +148,11 @@
         "Label": "MEDIUM"
     },
     "Title": "Ensure that all FMS policies inside an admin account are compliant",
-    "Description": "FMS without any compliant policy for account 239285816251.",
+    "Description": "FMS without any compliant policy for account 123456789012.",
     "Resources": [
         {
             "Type": "Other",
-            "Id": "arn:aws:fms:us-east-1:239285816251:policy",
+            "Id": "arn:aws:fms:us-east-1:123456789012:policy",
             "Partition": "aws",
             "Region": "us-east-1"
         }
@@ -184,16 +184,16 @@
     }
 },{
     "SchemaVersion": "2018-10-08",
-    "Id": "prowler-vpc_different_regions-239285816251-us-east-1-44cecf287",
+    "Id": "prowler-vpc_different_regions-123456789012-us-east-1-44cecf287",
     "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
     "RecordState": "ACTIVE",
     "ProductFields": {
         "ProviderName": "Prowler",
         "ProviderVersion": "5.11.0",
-        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:vpc"
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:123456789012:vpc"
     },
     "GeneratorId": "prowler-vpc_different_regions",
-    "AwsAccountId": "239285816251",
+    "AwsAccountId": "123456789012",
     "Types": [
         "Infrastructure Security"
     ],
@@ -208,7 +208,7 @@
     "Resources": [
         {
             "Type": "AwsEc2Vpc",
-            "Id": "arn:aws:ec2:us-east-1:239285816251:vpc",
+            "Id": "arn:aws:ec2:us-east-1:123456789012:vpc",
             "Partition": "aws",
             "Region": "us-east-1"
         }
@@ -244,16 +244,16 @@
     }
 },{
     "SchemaVersion": "2018-10-08",
-    "Id": "prowler-vpc_endpoint_services_allowed_principals_trust_boundaries-239285816251-us-east-1-560f32bf0",
+    "Id": "prowler-vpc_endpoint_services_allowed_principals_trust_boundaries-123456789012-us-east-1-560f32bf0",
     "ProductArn": "arn:aws:securityhub:us-east-1::product/prowler/prowler",
     "RecordState": "ACTIVE",
     "ProductFields": {
         "ProviderName": "Prowler",
         "ProviderVersion": "5.11.0",
-        "ProwlerResourceName": "arn:aws:ec2:us-east-1:239285816251:vpc-endpoint-service/vpce-svc-02e288a4c6043110f"
+        "ProwlerResourceName": "arn:aws:ec2:us-east-1:123456789012:vpc-endpoint-service/vpce-svc-02e288a4c6043110f"
     },
     "GeneratorId": "prowler-vpc_endpoint_services_allowed_principals_trust_boundaries",
-    "AwsAccountId": "239285816251",
+    "AwsAccountId": "123456789012",
     "Types": [
         "Infrastructure Security"
     ],
@@ -268,7 +268,7 @@
     "Resources": [
         {
             "Type": "AwsEc2VpcEndpointService",
-            "Id": "arn:aws:ec2:us-east-1:239285816251:vpc-endpoint-service/vpce-svc-02e288a4c6043110f",
+            "Id": "arn:aws:ec2:us-east-1:123456789012:vpc-endpoint-service/vpce-svc-02e288a4c6043110f",
             "Partition": "aws",
             "Region": "us-east-1"
         }
