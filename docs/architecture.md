@@ -7,7 +7,7 @@ This document outlines the architecture of the Cloud Security Posture Management
 - **AWS EC2 Instance ("Cloud-Security-VM")**:
   - **Instance ID**: `i-05557392b2293e188`
   - **Region**: `us-east-2`
-  - **Public IP**: `18.222.60.52`
+  - **Public IP**: `<public-ip>`
   - **Private IP**: `172.31.34.64`
   - **AMI**: `ami-06d53ad9c5c4da96d` (Amazon Linux 2023)
   - **Instance Type**: `t3.micro`
@@ -30,7 +30,7 @@ This document outlines the architecture of the Cloud Security Posture Management
 ```mermaid
 graph TD
     A["Internet"] --> B["AWS Cloud (us-east-2)"]
-    B --> C["EC2 Instance - Cloud-Security-VM 18.222.60.52"]
+    B --> C["EC2 Instance - Cloud-Security-VM <public-ip>"]
     C --> D["Prowler 5.11.0"]
     D --> E["Scans EC2 and AWS account"]
     D --> F["Generates prowler-report.json"]
