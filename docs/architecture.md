@@ -5,7 +5,7 @@ This document outlines the architecture of the Cloud Security Posture Management
 ## Components
 
 - **AWS EC2 Instance ("Cloud-Security-VM")**:
-  - **Instance ID**: `i-05557392b2293e188`
+  - **Instance ID**: `i-EXAMPLE`
   - **Region**: `us-east-2`
   - **Public IP**: `<public-ip>`
   - **Private IP**: `<private-ip>`
