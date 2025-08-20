@@ -8,7 +8,7 @@ This document outlines the architecture of the Cloud Security Posture Management
   - **Instance ID**: `i-05557392b2293e188`
   - **Region**: `us-east-2`
   - **Public IP**: `<public-ip>`
-  - **Private IP**: `172.31.34.64`
+  - **Private IP**: `<private-ip>`
   - **AMI**: `ami-06d53ad9c5c4da96d` (Amazon Linux 2023)
   - **Instance Type**: `t3.micro`
   - **Key Pair**: `cloud-security-key`
