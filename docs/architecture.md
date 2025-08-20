@@ -22,7 +22,7 @@ This document outlines the architecture of the Cloud Security Posture Management
   - **Output**: JSON report (`prowler-report.json`) stored on the EC2 instance and transferred to SIEM-Lab-VM.
 
 - **Splunk (on SIEM-Lab-VM)**:
-  - **IP**: `192.168.71.133`
+  - **IP**: `192.168.0.1`
   - **Role**: Ingests the Prowler report, indexes it as `sourcetype=prowler_log`, and visualizes findings in a custom dashboard.
   - **Dashboard**: "Cloud Security Posture Dashboard" with Compliance Status and Misconfigurations panels.
 
@@ -34,7 +34,7 @@ graph TD
     C --> D["Prowler 5.11.0"]
     D --> E["Scans EC2 and AWS account"]
     D --> F["Generates prowler-report.json"]
-    C --> G["SIEM-Lab-VM 192.168.71.133"]
+    C --> G["SIEM-Lab-VM 192.168.0.1"]
     G --> H["Splunk"]
     H --> I["Ingests prowler-report.json"]
     H --> J["Displays Cloud Security Posture Dashboard"]
