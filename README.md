@@ -43,10 +43,7 @@ The lab successfully identified security compliance and misconfigurations, visua
 The lab architecture is detailed in [docs/architecture.md](docs/architecture.md), illustrating the flow from AWS to the EC2 instance with Prowler, and Splunk on the SIEM-Lab-VM.
 
 ## Contributors
-- Youssef Mangt (ymangt)
-
-## License
-This project is for educational purposes only. No commercial use is permitted without prior consent.
+- Youssef Elmanawy (ymangt)
 
 ## Acknowledgments
 - AWS for providing the Free Tier and EC2 services.
